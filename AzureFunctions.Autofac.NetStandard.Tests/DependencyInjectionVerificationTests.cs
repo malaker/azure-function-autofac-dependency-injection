@@ -3,12 +3,20 @@ using Autofac.Core;
 using AzureFunctions.Autofac.Configuration;
 using AzureFunctions.Autofac.Exceptions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NetCoreExample.Functions;
 
 namespace AzureFunctions.Autofac.NetStandard.Tests
 {
     [TestClass]
     public class DependencyInjectionVerificationTests
     {
+        [TestMethod]
+        public void VerifyConfiguration_Should_PassSuccessfully_When_ILoggerFactory_Required()
+        {
+            DependencyInjection.VerifyConfiguration(typeof(LoggerFunction));
+        }
+
+
         [TestMethod]
         public void VerifyConfiguration_Should_PassSuccessfully_When_CorrectConfiguration()
         {
