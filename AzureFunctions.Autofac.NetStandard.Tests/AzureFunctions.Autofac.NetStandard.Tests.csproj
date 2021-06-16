@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AzureFunctions.Autofac.NetStandard\AzureFunctions.Autofac.NetStandard.csproj" />
     <ProjectReference Include="..\AzureFunctions.Autofac.Shared\AzureFunctions.Autofac.Shared.csproj" />
+    <ProjectReference Include="..\NetCoreExample\NetCoreExample.csproj" />
   </ItemGroup>
 
 </Project>
